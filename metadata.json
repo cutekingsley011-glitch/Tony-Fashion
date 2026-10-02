@@ -1,0 +1,6 @@
+{
+  "name": "Tony Fashion",
+  "description": "Tony Fashion (TONYFASHIONFIT) — International fashion house specializing in avant-garde denim, bespoke atelier tailoring, technical production, and professional academy training.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
