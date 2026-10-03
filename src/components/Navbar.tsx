@@ -169,19 +169,6 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenI
             Request Consultation
           </button>
 
-          {onOpenOwner && isOwnerMode() && (
-            <button
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenOwner();
-              }}
-              className="w-full py-2.5 bg-neutral-900 border border-[#d4995c]/60 text-[#d4995c] hover:bg-[#d4995c] hover:text-black text-xs uppercase tracking-[0.15em] font-medium transition-colors flex items-center justify-center gap-2 cursor-pointer"
-            >
-              <Camera className="w-4 h-4" />
-              <span>Owner: Upload Real Photos</span>
-            </button>
-          )}
-
           <div className="pt-2 text-center text-[10px] uppercase tracking-[0.15em] text-neutral-400 font-light">
             <span>{BRAND_INFO.shortAddress}</span>
           </div>

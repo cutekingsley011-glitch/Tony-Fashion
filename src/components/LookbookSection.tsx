@@ -72,15 +72,6 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({
           </div>
 
           <div className="flex items-center gap-3">
-            {onOpenOwner && ownerActive && (
-              <button
-                onClick={onOpenOwner}
-                className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-neutral-900 border border-[#d4995c]/50 text-[#d4995c] hover:bg-[#d4995c] hover:text-black text-[11px] font-medium transition-colors cursor-pointer"
-              >
-                <Camera className="w-3.5 h-3.5" />
-                <span>Upload Phone Photos</span>
-              </button>
-            )}
             <span className="text-[11px] text-neutral-400 font-light hidden sm:inline">
               Tap any look to view details
             </span>
