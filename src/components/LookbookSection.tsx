@@ -39,12 +39,13 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({
   }, []);
 
   const getItemImage = (item: LookbookItem, index: number): string => {
-    // Default to the saved genuine photos in public/photos, or custom memory upload
-    if (index === 0) return mediaMap.atelierRack || '/photos/atelierRack.jpg';
-    if (index === 1) return mediaMap.oliveMonogram || '/photos/oliveMonogram.jpg';
-    if (index === 2) return mediaMap.oliveSilhouette || '/photos/oliveSilhouette.jpg';
-    if (index === 3) return mediaMap.tweedPortrait || '/photos/tweedPortrait.jpg';
-    if (index === 4) return mediaMap.tweedWideTrousers || '/photos/tweedWideTrousers.jpg';
+    // Priority 1: User uploaded custom photo in Owner Mode
+    if (index === 0 && mediaMap.oliveMonogram) return mediaMap.oliveMonogram;
+    if (index === 1 && (mediaMap.whitePipedSet || mediaMap.oliveSilhouette)) return (mediaMap.whitePipedSet || mediaMap.oliveSilhouette)!;
+    if (index === 2 && (mediaMap.tweedWideTrousers || mediaMap.tweedPortrait)) return (mediaMap.tweedWideTrousers || mediaMap.tweedPortrait)!;
+    if (index === 3 && mediaMap.atelierRack) return mediaMap.atelierRack;
+    if (index === 4 && mediaMap.crazyJeans) return mediaMap.crazyJeans;
+    // Priority 2: Direct bundled static asset imported in fashionData
     return item.image;
   };
 
@@ -101,6 +102,9 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({
                   <img
                     src={currentImg}
                     alt={item.title}
+                    onError={(e) => {
+                      (e.currentTarget as HTMLImageElement).src = item.image;
+                    }}
                     className="w-full h-full object-cover object-center filter brightness-95 group-hover:scale-105 transition-transform duration-500"
                     loading="lazy"
                   />
