@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BRAND_INFO, getWhatsAppUrl } from '../data/fashionData';
-import { Send, CheckCircle2, MessageCircle, MapPin, Clock, Mail } from 'lucide-react';
+import { Send, CheckCircle2, MessageCircle, MapPin, Clock, Mail, Instagram } from 'lucide-react';
 
 interface ContactSectionProps {
   initialSubject?: string;
@@ -44,7 +44,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
             Contact & Store Location
           </h2>
           <p className="text-xs sm:text-sm text-neutral-400 font-light">
-            Visit our physical workshop in Abakaliki or connect directly on WhatsApp.
+            Visit our physical workshop at Delta Park UniPort, Port Harcourt or connect directly on WhatsApp & Social Media.
           </p>
         </div>
 
@@ -102,6 +102,62 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
                   <span className="text-white font-medium block">Email</span>
                   <span className="text-neutral-400 font-light">{BRAND_INFO.contactEmail}</span>
                 </div>
+              </div>
+            </div>
+
+            {/* Official Social Media Channels (Instagram & TikTok) */}
+            <div className="p-6 bg-neutral-950 border border-neutral-850 space-y-3">
+              <div className="flex items-center justify-between border-b border-neutral-850 pb-2">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-[#d4995c] font-sans font-medium">
+                  Official Media Pages
+                </span>
+                <span className="text-[10px] text-neutral-400">@tonyfashion.fit</span>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+                {/* Instagram Button */}
+                <a
+                  href={BRAND_INFO.socials.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-gradient-to-br from-neutral-900 to-neutral-950 border border-neutral-800 hover:border-[#E1306C] text-neutral-300 hover:text-white transition-all flex items-center justify-between group cursor-pointer"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-full bg-[#E1306C]/10 border border-[#E1306C]/30 flex items-center justify-center text-[#E1306C] group-hover:bg-[#E1306C] group-hover:text-white transition-all">
+                      <Instagram className="w-4 h-4" />
+                    </div>
+                    <div>
+                      <span className="text-xs font-medium text-white block">Instagram</span>
+                      <span className="text-[10px] text-neutral-400 font-mono">@tonyfashion.fit</span>
+                    </div>
+                  </div>
+                  <span className="text-[10px] uppercase tracking-wider text-neutral-400 group-hover:text-[#E1306C] font-medium">
+                    Visit ↗
+                  </span>
+                </a>
+
+                {/* TikTok Button */}
+                <a
+                  href={BRAND_INFO.socials.tiktok}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 bg-gradient-to-br from-neutral-900 to-neutral-950 border border-neutral-800 hover:border-[#00f2fe] text-neutral-300 hover:text-white transition-all flex items-center justify-between group cursor-pointer"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <div className="w-8 h-8 rounded-full bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 group-hover:bg-white group-hover:text-black transition-all">
+                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <span className="text-xs font-medium text-white block">TikTok</span>
+                      <span className="text-[10px] text-neutral-400 font-mono">@tonyfashion.fit</span>
+                    </div>
+                  </div>
+                  <span className="text-[10px] uppercase tracking-wider text-neutral-400 group-hover:text-cyan-400 font-medium">
+                    Visit ↗
+                  </span>
+                </a>
               </div>
             </div>
           </div>

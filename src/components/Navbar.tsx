@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PageId } from '../types';
-import { Menu, X, ArrowUpRight, MessageCircle, Camera } from 'lucide-react';
+import { Menu, X, ArrowUpRight, MessageCircle, Camera, Instagram } from 'lucide-react';
 import { BrandLogo } from './BrandLogo';
 import { getWhatsAppUrl, BRAND_INFO } from '../data/fashionData';
 import { isOwnerMode } from '../utils/ownerMode';
@@ -84,6 +84,32 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenI
 
           {/* Zone 3: Action & Mobile Toggle */}
           <div className="flex items-center gap-3">
+            {/* Quick Social Links (Desktop) */}
+            <div className="hidden sm:flex items-center gap-1.5 mr-1">
+              <a
+                href={BRAND_INFO.socials.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-neutral-400 hover:text-[#E1306C] hover:bg-white/5 rounded transition-all cursor-pointer"
+                aria-label="Instagram @tonyfashion.fit"
+                title="Instagram @tonyfashion.fit"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a
+                href={BRAND_INFO.socials.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 text-neutral-400 hover:text-cyan-400 hover:bg-white/5 rounded transition-all cursor-pointer"
+                aria-label="TikTok @tonyfashion.fit"
+                title="TikTok @tonyfashion.fit"
+              >
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
+                </svg>
+              </a>
+            </div>
+
             <a
               href={whatsappLink}
               target="_blank"
@@ -168,6 +194,30 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenI
           >
             Request Consultation
           </button>
+
+          {/* Mobile Social Links */}
+          <div className="grid grid-cols-2 gap-2 pt-1">
+            <a
+              href={BRAND_INFO.socials.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-2.5 px-3 bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white flex items-center justify-center gap-2 text-xs font-medium transition-colors"
+            >
+              <Instagram className="w-3.5 h-3.5 text-[#E1306C]" />
+              <span>Instagram</span>
+            </a>
+            <a
+              href={BRAND_INFO.socials.tiktok}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="py-2.5 px-3 bg-neutral-900 border border-neutral-800 text-neutral-300 hover:text-white flex items-center justify-center gap-2 text-xs font-medium transition-colors"
+            >
+              <svg className="w-3.5 h-3.5 fill-current text-cyan-400" viewBox="0 0 24 24">
+                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z"/>
+              </svg>
+              <span>TikTok</span>
+            </a>
+          </div>
 
           <div className="pt-2 text-center text-[10px] uppercase tracking-[0.15em] text-neutral-400 font-light">
             <span>{BRAND_INFO.shortAddress}</span>

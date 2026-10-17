@@ -44,9 +44,15 @@ export const BRAND_INFO = {
   whatsappNumber: '2347049896447',
   whatsappDisplay: '+234 704 989 6447',
   whatsappDefaultMessage: 'Hi Tony Fashion, I came from the website, I came to make enquiries.',
-  physicalStore: 'No 10 Bernard Orogwu Street, Kpirikpiri, Abakaliki, Ebonyi State, Nigeria',
-  shortAddress: 'No 10 Bernard Orogwu St, Kpirikpiri, Abakaliki, Ebonyi State',
-  coordinates: 'Physical Store & Atelier, Abakaliki, Ebonyi State',
+  physicalStore: 'Delta Park UniPort, Port Harcourt, Rivers State, Nigeria',
+  shortAddress: 'Delta Park UniPort, Port Harcourt, Rivers State',
+  coordinates: 'Physical Store & Atelier, Delta Park UniPort, Port Harcourt, Rivers State',
+  socials: {
+    instagram: 'https://www.instagram.com/tonyfashion.fit?xtok=OTE5aDU1cmk4ODdi',
+    instagramHandle: '@tonyfashion.fit',
+    tiktok: 'https://www.tiktok.com/@tonyfashion.fit?_r=1&_t=ZS-9Abrb5NlpPU',
+    tiktokHandle: '@tonyfashion.fit',
+  },
 };
 
 export function getWhatsAppUrl(customMessage?: string): string {
