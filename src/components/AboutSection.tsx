@@ -18,9 +18,9 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         {/* Header */}
         <div className="max-w-3xl mb-16 sm:mb-20">
           <div className="flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-neutral-400 font-sans mb-3">
-            <span>Brand Heritage & Identity</span>
+            <span>Our Story & Workshop</span>
             <span className="w-6 h-px bg-neutral-700" />
-            <span>Over A Decade</span>
+            <span>Over 10 Years in Nigeria</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-white font-normal leading-tight mb-6">
@@ -28,7 +28,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
           </h2>
 
           <p className="font-sans text-neutral-300 text-base sm:text-lg font-light leading-relaxed">
-            Tony Fashion ({BRAND_INFO.alias}) is an independent fashion design and manufacturing house operating at the intersection of avant-garde denim experimentation and industrial production rigor.
+            Tony Fashion ({BRAND_INFO.alias}) is a Nigerian fashion brand and sewing workshop based at Delta Park UniPort, Port Harcourt. We are well known for neat custom tailoring, creative crazy jeans, bulk factory sewing, and practical fashion school training.
           </p>
         </div>
 
@@ -40,28 +40,28 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
               <BrandLogo size="lg" />
               <div className="text-right">
                 <span className="text-[10px] uppercase tracking-[0.25em] text-neutral-400 block">
-                  Official Insignia
+                  Official Brand
                 </span>
                 <span className="text-xs text-[#d4995c] font-sans tracking-widest font-medium">
-                  TF ATELIER
+                  TONY FASHION
                 </span>
               </div>
             </div>
 
             <h3 className="font-serif text-2xl sm:text-3xl text-white font-normal leading-snug">
-              A Decade of Tactile Mastery and Non-Basic Garments
+              Over 10 Years of Real Tailoring & Quality Sewing
             </h3>
 
             <p className="font-sans text-neutral-400 text-sm sm:text-base leading-relaxed font-light">
-              For more than ten years, Tony Fashion has operated as a living workshop. We began not with mood boards or venture financing, but at the cutting table with heavy-gauge shears, tailor chalk, and raw fabric bolts.
+              For more than ten years, Tony Fashion has been doing real work at the cutting table with scissors, tailor chalk, and quality fabrics. We did not start with empty talk — we started by cutting and sewing neat, clean clothes that make our customers look sharp.
             </p>
 
             <p className="font-sans text-neutral-400 text-sm sm:text-base leading-relaxed font-light">
-              While conventional fashion moved toward disposable mass production and generic blanks, our studio doubled down on non-basic, high-character silhouettes. We became renowned for our experimental &ldquo;crazy-jeans&rdquo; — sculptural denim constructions featuring asymmetric paneling, multidirectional pockets, and intricate seam ergonomics that challenge conventional tailoring rules.
+              While many tailors only sew plain, basic styles, we decided to be creative. That was how we created our famous &ldquo;crazy jeans&rdquo; — stylish denim trousers with unique cargo pockets, creative patch designs, and strong stitches that turn heads anywhere you go.
             </p>
 
             <p className="font-sans text-neutral-400 text-sm sm:text-base leading-relaxed font-light">
-              Over ten continuous years of physical garment manufacturing, we expanded our operational footprint to encompass not only bespoke individual commissions, but small-batch B2B industrial manufacturing and a structured academy where apprentice tailors learn the craft first-hand.
+              Today, our workshop handles custom individual orders, bulk sewing for clothing brands and school uniforms, and our fashion academy where young people learn the trade with real sewing machines.
             </p>
 
             {/* Core Values Minimalist Grid */}
@@ -69,13 +69,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
               <div>
                 <span className="font-serif text-3xl text-white block mb-1">10+</span>
                 <span className="text-xs uppercase tracking-wider text-neutral-400 font-sans">
-                  Years of Physical Operation
+                  Years of Tailoring Experience
                 </span>
               </div>
               <div>
-                <span className="font-serif text-3xl text-white block mb-1">4-Phase</span>
+                <span className="font-serif text-3xl text-white block mb-1">4 Services</span>
                 <span className="text-xs uppercase tracking-wider text-neutral-400 font-sans">
-                  Integrated Fashion Engine
+                  Custom, Jeans, Bulk & Academy
                 </span>
               </div>
             </div>
@@ -90,25 +90,25 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
                 loading="lazy"
               />
               <div className="absolute bottom-4 left-4 bg-black/80 px-3 py-1.5 border border-white/10 text-[11px] font-sans tracking-widest text-neutral-300">
-                Atelier Mannequin Vest & Sample Rack
+                Tailored Outfits on Display in Our Workshop
               </div>
             </div>
 
             <div className="p-6 sm:p-8 bg-neutral-950 border border-neutral-800/80">
               <h4 className="font-serif text-xl text-white mb-3 font-normal">
-                The Integrated Fashion Engine
+                How We Work at Tony Fashion
               </h4>
               <p className="text-xs text-neutral-400 leading-relaxed font-light mb-4">
-                Our operations form a closed continuous loop where ideas pass seamlessly from bespoke sketches to industrial engineering, material research, and apprentice transmission:
+                Everything we do is connected under one roof to give you the best quality clothing:
               </p>
               <div className="flex flex-wrap items-center gap-2 text-xs font-sans tracking-wider uppercase text-neutral-200">
-                <span className="px-2.5 py-1 bg-neutral-900 border border-neutral-800">Design</span>
+                <span className="px-2.5 py-1 bg-neutral-900 border border-neutral-800">1. Accurate Measurement</span>
                 <span className="text-neutral-600">→</span>
-                <span className="px-2.5 py-1 bg-neutral-900 border border-neutral-800">Production</span>
+                <span className="px-2.5 py-1 bg-neutral-900 border border-neutral-800">2. Clean Pattern Cutting</span>
                 <span className="text-neutral-600">→</span>
-                <span className="px-2.5 py-1 bg-neutral-900 border border-neutral-800">Development</span>
+                <span className="px-2.5 py-1 bg-neutral-900 border border-neutral-800">3. Industrial Sewing</span>
                 <span className="text-neutral-600">→</span>
-                <span className="px-2.5 py-1 bg-neutral-900 border border-neutral-800">Education</span>
+                <span className="px-2.5 py-1 bg-neutral-900 border border-neutral-800">4. Perfect Fitting</span>
               </div>
             </div>
           </div>
@@ -118,10 +118,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
         <div className="pt-12 border-t border-neutral-800/80 flex flex-col sm:flex-row sm:items-center justify-between gap-6">
           <div>
             <h4 className="font-serif text-2xl text-white font-normal mb-1">
-              Connect With The Founders & Artisans
+              Talk Directly with Our Head Tailors
             </h4>
             <p className="text-xs text-neutral-400 font-light">
-              Available for bespoke appointments, brand production partnerships, and press inquiries.
+              Reach out to sew custom clothes, discuss bulk production for your brand, or register for our fashion academy.
             </p>
           </div>
 
@@ -129,7 +129,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({
             onClick={() => onOpenInquiry('general')}
             className="px-6 py-3.5 bg-white text-black text-xs uppercase tracking-[0.2em] font-medium hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 cursor-pointer self-start sm:self-auto"
           >
-            <span>Initiate Dialogue</span>
+            <span>Send Us a Message</span>
             <ArrowUpRight className="w-4 h-4" />
           </button>
         </div>

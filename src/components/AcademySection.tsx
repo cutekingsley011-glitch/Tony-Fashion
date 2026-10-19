@@ -78,9 +78,9 @@ export const AcademySection: React.FC<AcademySectionProps> = ({
         {/* Header */}
         <div className="max-w-3xl mb-12 sm:mb-16">
           <div className="flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-neutral-400 font-sans mb-3">
-            <span>Professional Education Arm</span>
+            <span>Learn Fashion & Tailoring</span>
             <span className="w-6 h-px bg-neutral-700" />
-            <span>Pillar 03</span>
+            <span>Practical Training</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-white font-normal leading-tight mb-6">
@@ -88,7 +88,7 @@ export const AcademySection: React.FC<AcademySectionProps> = ({
           </h2>
 
           <p className="font-sans text-neutral-300 text-base sm:text-lg font-light leading-relaxed">
-            A vocational training institute embedded directly within an operating fashion house. We do not sell pre-recorded video courses; we train working tailors, pattern engineers, and factory supervisors on industrial equipment.
+            A practical tailoring school inside our working fashion house in Port Harcourt. No pre-recorded videos — you will sit down at real industrial sewing machines and learn how to cut and sew clothes like a professional.
           </p>
         </div>
 
@@ -113,36 +113,36 @@ export const AcademySection: React.FC<AcademySectionProps> = ({
 
               {/* Bottom Caption */}
               <div className="absolute bottom-3 left-3 bg-black/85 px-3 py-1.5 border border-white/10 text-[11px] font-sans tracking-wider text-neutral-300">
-                Pattern Drafting & Industrial Draping Workshop
+                Pattern Cutting & Hands-on Sewing Workshop
               </div>
             </div>
           </div>
 
           <div className="lg:col-span-5 space-y-6">
             <div className="text-xs uppercase tracking-[0.2em] text-[#d4995c] font-sans">
-              Vocational Discipline
+              Practical Sewing Training
             </div>
 
             <h3 className="font-serif text-2xl sm:text-3xl text-white font-normal leading-snug">
-              Physical Immersion on the Production Floor
+              100% Practical Training on Real Sewing Machines
             </h3>
 
             <p className="font-sans text-neutral-400 text-sm leading-relaxed font-light">
-              Craftsmanship is tactile intelligence. Under the guidance of our master tailors with over ten years of active industry mastery, apprentices work directly with industrial heavy-duty lockstitch machines, computerized pattern tables, and authentic selvedge textiles.
+              Tailoring is a hands-on skill. Under the patient guidance of our master tailors with over ten years of experience, you will learn to operate industrial sewing machines, cut accurate patterns on brown paper, and sew clean clothes with confidence.
             </p>
 
             <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-xs text-neutral-300">
                 <ShieldCheck className="w-4 h-4 text-[#d4995c] shrink-0" />
-                <span>Zero simulated exercises — all training uses real garment cuts</span>
+                <span>Practice on real fabrics and sew clothes you can wear yourself</span>
               </div>
               <div className="flex items-center gap-3 text-xs text-neutral-300">
                 <ShieldCheck className="w-4 h-4 text-[#d4995c] shrink-0" />
-                <span>1:4 Master artisan-to-apprentice ratio for personalized scrutiny</span>
+                <span>Small classes so your instructor gives you close, personal attention</span>
               </div>
               <div className="flex items-center gap-3 text-xs text-neutral-300">
                 <ShieldCheck className="w-4 h-4 text-[#d4995c] shrink-0" />
-                <span>Direct pathway to employment within our manufacturing house</span>
+                <span>Best performing students get job opportunities in our workshop</span>
               </div>
             </div>
 
@@ -151,7 +151,7 @@ export const AcademySection: React.FC<AcademySectionProps> = ({
                 onClick={() => onOpenInquiry('academy')}
                 className="px-6 py-3.5 bg-white text-black text-xs uppercase tracking-[0.2em] font-medium hover:bg-neutral-200 transition-colors cursor-pointer"
               >
-                Apply For Academy Admission
+                Register for Training Classes
               </button>
             </div>
           </div>
@@ -161,10 +161,10 @@ export const AcademySection: React.FC<AcademySectionProps> = ({
         <div className="mb-16">
           <div className="flex items-center justify-between mb-8 border-b border-neutral-800 pb-4">
             <h3 className="font-serif text-2xl sm:text-3xl text-white font-normal">
-              Structured Curriculum Tracks
+              Our Courses & Training Programs
             </h3>
             <span className="text-xs uppercase tracking-widest text-neutral-400 hidden sm:block">
-              Physical Studio Enrolment
+              Port Harcourt Classes
             </span>
           </div>
 
@@ -195,7 +195,7 @@ export const AcademySection: React.FC<AcademySectionProps> = ({
 
                   <div className="border-t border-neutral-900 pt-5 mb-6">
                     <div className="text-[10px] uppercase tracking-[0.2em] text-neutral-400 font-sans mb-3">
-                      Syllabus Competencies
+                      What You Will Learn
                     </div>
                     <ul className="space-y-2.5">
                       {program.curriculum.map((item, idx) => (
@@ -211,14 +211,14 @@ export const AcademySection: React.FC<AcademySectionProps> = ({
                 <div className="pt-6 border-t border-neutral-900 flex items-center justify-between">
                   <div className="flex items-center gap-2 text-xs text-neutral-300">
                     <Award className="w-4 h-4 text-white" />
-                    <span>Graduation Certificate</span>
+                    <span>Certificate of Completion</span>
                   </div>
 
                   <button
                     onClick={() => onOpenInquiry(`Academy Enrolment: ${program.title}`)}
                     className="flex items-center gap-1 text-xs uppercase tracking-wider text-white hover:text-neutral-300 cursor-pointer"
                   >
-                    <span>Enroll</span>
+                    <span>Register</span>
                     <ArrowUpRight className="w-3.5 h-3.5" />
                   </button>
                 </div>
@@ -230,20 +230,20 @@ export const AcademySection: React.FC<AcademySectionProps> = ({
         {/* Verification Guarantee */}
         <div className="border border-neutral-800 bg-neutral-950/60 p-8 sm:p-12 text-center max-w-4xl mx-auto">
           <div className="text-xs uppercase tracking-[0.25em] text-[#d4995c] font-sans mb-3">
-            Tony Fashion Accreditation
+            Real Practical Guarantee
           </div>
           <h3 className="font-serif text-2xl sm:text-3xl text-white font-normal mb-4">
-            Hands-On Mastery, Certified by Master Tailors
+            Learn Real Skills and Become Your Own Boss
           </h3>
           <p className="font-sans text-neutral-400 text-xs sm:text-sm font-light leading-relaxed max-w-2xl mx-auto mb-8">
-            Every candidate who completes the Academy capstone project produces a finished three-piece bespoke garment or structured uniform collection audited by senior industry patternmakers.
+            Before graduating, every student must cut and sew their own complete outfits — senator wear, suits, or crazy jeans — to show they are 100% ready to sew for paying clients.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <button
               onClick={() => onOpenInquiry('academy')}
               className="w-full sm:w-auto px-8 py-3.5 bg-[#d4995c] text-black text-xs uppercase tracking-[0.2em] font-semibold hover:bg-[#c3864a] transition-colors cursor-pointer"
             >
-              Book Studio Walkthrough & Consultation
+              Visit Our School or Ask About Fees
             </button>
           </div>
         </div>

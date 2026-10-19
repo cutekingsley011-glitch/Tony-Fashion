@@ -80,20 +80,20 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
         </button>
 
         <div className="mb-6">
-          <span className="text-[11px] uppercase tracking-[0.25em] text-neutral-400 font-sans block mb-2">
-            Tony Fashion Atelier
+          <span className="text-[11px] uppercase tracking-[0.25em] text-[#d4995c] font-sans block mb-2">
+            Tony Fashion Port Harcourt
           </span>
           <h3 className="font-serif text-2xl sm:text-3xl text-white font-normal">
-            Request Consultation
+            Send Us a Message
           </h3>
         </div>
 
         {submitted ? (
           <div className="py-10 text-center space-y-4">
-            <CheckCircle2 className="w-10 h-10 text-white mx-auto stroke-1" />
-            <h4 className="font-serif text-2xl text-white">Dispatch Transmitted</h4>
-            <p className="text-xs text-neutral-400 font-light leading-relaxed max-w-md mx-auto">
-              Your inquiry has been routed to our studio team. We will review your brief and contact you via email promptly.
+            <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto stroke-1" />
+            <h4 className="font-serif text-2xl text-white">Message Sent Successfully!</h4>
+            <p className="text-xs text-neutral-300 font-light leading-relaxed max-w-md mx-auto">
+              Thank you! We have received your details. Our team will review your message and reply promptly.
             </p>
             <div className="pt-4">
               <button
@@ -111,18 +111,18 @@ export const InquiryModal: React.FC<InquiryModalProps> = ({
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label className="block text-[11px] uppercase tracking-wider text-neutral-400 mb-2 font-sans">
-                Inquiry Focus
+                What do you want to enquire about?
               </label>
               <select
                 value={inquiryType}
                 onChange={(e) => setInquiryType(e.target.value)}
                 className="w-full bg-neutral-950 border border-neutral-800 px-3.5 py-2.5 text-xs text-white focus:outline-none focus:border-white transition-colors"
               >
-                <option value="bespoke">01. Atelier Bespoke Commission</option>
-                <option value="production">02. Production House & B2B Manufacturing</option>
-                <option value="academy">03. Tony Fashion Academy Enrolment</option>
-                <option value="collaboration">Brand Collaboration & Press</option>
-                <option value="general">General Studio Consultation</option>
+                <option value="bespoke">01. Sew Custom Clothes / Crazy Jeans (For Myself)</option>
+                <option value="production">02. Bulk Clothes Sewing (Brands, Schools & Uniforms)</option>
+                <option value="academy">03. Register for Tony Fashion Academy Training</option>
+                <option value="collaboration">04. Brand Collaboration & Business Inquiry</option>
+                <option value="general">05. General Questions or Price Enquiry</option>
               </select>
             </div>
 

@@ -64,7 +64,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               </h3>
 
               <p className="text-xs text-neutral-300 font-light leading-relaxed">
-                Connect instantly with Tony Fashion for bespoke orders, crazy-jeans inquiries, B2B production, or academy admissions.
+                Chat directly with Tony Fashion for custom clothes, crazy jeans orders, bulk factory sewing, or fashion school admission.
               </p>
 
               <a
@@ -83,7 +83,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-[#d4995c] mt-0.5 shrink-0" />
                 <div>
-                  <span className="text-white font-medium block">Physical Store & Atelier</span>
+                  <span className="text-white font-medium block">Physical Store & Workshop</span>
                   <span className="text-neutral-300 font-light mt-0.5 block">{BRAND_INFO.physicalStore}</span>
                 </div>
               </div>

@@ -26,11 +26,11 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
         {/* Hero Title & Information - cleanly positioned at bottom without blocking model */}
         <div className="max-w-3xl">
           <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl text-white font-normal tracking-tight leading-[1.1] mb-4 text-balance">
-            Bespoke Tailoring, Crazy-Jeans & Apparel Manufacturing
+            Custom Tailoring, Famous Crazy Jeans & Bulk Clothes Sewing
           </h1>
 
           <p className="font-sans text-neutral-300 text-sm sm:text-base font-light leading-relaxed max-w-xl mb-6 text-balance">
-            Over a decade of hands-on physical craftsmanship. We design, manufacture, and teach non-basic garments with structural integrity.
+            Over 10 years of quality sewing experience in Port Harcourt. We sew clean custom outfits that fit you well, craft creative crazy jeans, produce bulk clothes for brands, and teach practical fashion design.
           </p>
 
           {/* Action CTAs */}
@@ -42,7 +42,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
               className="px-6 py-3 bg-[#25D366] hover:bg-[#20bd5a] text-black text-xs uppercase tracking-[0.18em] font-semibold transition-all flex items-center gap-2 cursor-pointer shadow-lg"
             >
               <MessageCircle className="w-4 h-4 fill-current stroke-none" />
-              <span>WhatsApp Inquiries</span>
+              <span>Chat on WhatsApp</span>
             </a>
 
             <button
@@ -53,7 +53,7 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate, onOpenInquiry }) => {
               }}
               className="px-6 py-3 border border-neutral-600 hover:border-white text-white text-xs uppercase tracking-[0.18em] font-medium transition-colors text-center cursor-pointer flex items-center gap-1.5"
             >
-              <span>View Works</span>
+              <span>See Our Clothes</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
           </div>

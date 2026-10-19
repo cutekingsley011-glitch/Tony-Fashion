@@ -55,7 +55,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, onTriggerOwner }) =>
           <div>
             <BrandLogo size="md" />
             <p className="text-[11px] uppercase tracking-[0.2em] text-neutral-400 mt-2 font-light">
-              Bespoke Tailoring · Experimental Denim · Apparel Manufacturing
+              Custom Tailoring · Crazy Jeans · Bulk Clothes Sewing · Fashion Academy
             </p>
           </div>
 

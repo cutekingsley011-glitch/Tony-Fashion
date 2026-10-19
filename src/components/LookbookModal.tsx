@@ -83,14 +83,14 @@ export const LookbookModal: React.FC<LookbookModalProps> = ({ item, onClose, onI
             <div className="space-y-4 mb-8 pt-4 border-t border-neutral-800">
               <div>
                 <span className="block text-[11px] uppercase tracking-wider text-neutral-400 mb-1">
-                  Architectural Silhouette
+                  Fitting & Cut Style
                 </span>
                 <span className="text-xs text-neutral-200">{item.silhouette}</span>
               </div>
 
               <div>
                 <span className="block text-[11px] uppercase tracking-wider text-neutral-400 mb-1">
-                  Material Composition
+                  Fabric & Materials Used
                 </span>
                 <div className="flex flex-wrap gap-1.5">
                   {item.fabrics.map((fabric, idx) => (
@@ -106,7 +106,7 @@ export const LookbookModal: React.FC<LookbookModalProps> = ({ item, onClose, onI
 
               <div>
                 <span className="block text-[11px] uppercase tracking-wider text-neutral-400 mb-1">
-                  Craftsmanship & Finishing Details
+                  Key Features & Sewing Details
                 </span>
                 <ul className="text-xs text-neutral-300 space-y-1 list-disc list-inside">
                   {item.details.map((detail, idx) => (
@@ -120,7 +120,7 @@ export const LookbookModal: React.FC<LookbookModalProps> = ({ item, onClose, onI
           {/* Action Area: Bespoke / Production Consultation & WhatsApp */}
           <div className="pt-6 border-t border-neutral-800 space-y-3">
             <p className="text-[11px] text-neutral-400 mb-2 font-light">
-              This piece is part of our permanent atelier design archive. Available via custom bespoke tailoring or commercial production adaptation.
+              Want us to sew this exact style for you in your size and preferred color? Chat with us on WhatsApp or send a message below.
             </p>
 
             <a
@@ -130,7 +130,7 @@ export const LookbookModal: React.FC<LookbookModalProps> = ({ item, onClose, onI
               className="w-full py-3 bg-[#25D366] hover:bg-[#20bd5a] text-black text-xs uppercase tracking-[0.2em] font-semibold transition-colors flex items-center justify-center gap-2 cursor-pointer"
             >
               <MessageCircle className="w-4 h-4 fill-current stroke-none" />
-              <span>WhatsApp Inquiry For This Piece</span>
+              <span>Ask Price or Order on WhatsApp</span>
             </a>
 
             <button
@@ -140,7 +140,7 @@ export const LookbookModal: React.FC<LookbookModalProps> = ({ item, onClose, onI
               }}
               className="w-full py-3 border border-neutral-700 hover:border-white text-white text-xs uppercase tracking-[0.2em] font-medium transition-colors flex items-center justify-center gap-2 cursor-pointer"
             >
-              <span>Email Consultation Form</span>
+              <span>Send Inquiry Form</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </button>
           </div>

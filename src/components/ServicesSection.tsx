@@ -30,17 +30,17 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         {/* Header */}
         <div className="max-w-3xl mb-16 sm:mb-24">
           <div className="flex items-center gap-3 text-xs tracking-[0.25em] uppercase text-neutral-400 font-sans mb-3">
-            <span>Capabilities & Operations</span>
+            <span>What We Do For You</span>
             <span className="w-6 h-px bg-neutral-700" />
-            <span>Three Pillars</span>
+            <span>3 Main Services</span>
           </div>
 
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl text-white font-normal leading-tight mb-6">
-            Fashion Engine Services
+            Our Tailoring & Fashion Services
           </h2>
 
           <p className="font-sans text-neutral-400 text-base sm:text-lg font-light leading-relaxed">
-            From single private commissions to high-volume commercial production and generational technical education, our facilities are equipped to execute at international luxury standards.
+            Whether you want to sew one special outfit, produce bulk clothes for your fashion brand, or learn tailoring from scratch, we have the machines, skilled tailors, and experience to deliver.
           </p>
         </div>
 
@@ -60,7 +60,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                       <div className="flex items-center gap-2.5">
                         {getPillarIcon(pillar.id)}
                         <span className="text-xs uppercase tracking-[0.25em] text-neutral-400 font-sans">
-                          Pillar {pillar.number}
+                          Service {pillar.number}
                         </span>
                       </div>
                       <span className="font-serif text-3xl text-neutral-600 font-light">
@@ -91,7 +91,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
                       onClick={() => onOpenInquiry(pillar.id)}
                       className="w-full sm:w-auto px-7 py-3.5 bg-white text-black text-xs uppercase tracking-[0.2em] font-medium hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 cursor-pointer"
                     >
-                      <span>Consult With {pillar.title} Team</span>
+                      <span>Inquire About {pillar.title}</span>
                       <ArrowUpRight className="w-4 h-4" />
                     </button>
                   </div>
@@ -125,10 +125,10 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
         <div className="mt-20 p-8 sm:p-12 border border-neutral-800/80 bg-neutral-950 flex flex-col md:flex-row md:items-center justify-between gap-8">
           <div>
             <h4 className="font-serif text-2xl text-white mb-2 font-normal">
-              Technical Consultation & Facility Visits
+              Visit Our Workshop in Port Harcourt
             </h4>
             <p className="text-sm text-neutral-400 font-light max-w-xl">
-              Clients seeking bespoke commissions, brand development, or factory production audits are welcomed at our physical facilities by appointment.
+              Clients, clothing brand owners, and prospective students are always welcome to visit our workshop at Delta Park UniPort, Port Harcourt.
             </p>
           </div>
 
@@ -136,7 +136,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({
             onClick={() => onOpenInquiry('general')}
             className="px-6 py-3 border border-neutral-600 hover:border-white text-white text-xs uppercase tracking-[0.18em] transition-colors whitespace-nowrap cursor-pointer self-start md:self-auto"
           >
-            Schedule Atelier Visit
+            Book a Workshop Visit
           </button>
         </div>
       </div>

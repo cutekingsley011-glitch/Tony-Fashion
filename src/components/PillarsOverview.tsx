@@ -25,11 +25,11 @@ export const PillarsOverview: React.FC<PillarsOverviewProps> = ({ onNavigate, on
               What We Do
             </span>
             <h2 className="font-serif text-2xl sm:text-4xl text-white font-normal">
-              The Three Core Pillars
+              Our 3 Main Services
             </h2>
           </div>
           <p className="text-xs text-neutral-400 font-light max-w-md">
-            Design, industrial production, and apprentice training unified under one physical workshop.
+            Custom tailoring for individuals, bulk sewing for clothing brands and schools, and hands-on fashion training in Port Harcourt.
           </p>
         </div>
 
@@ -65,7 +65,7 @@ export const PillarsOverview: React.FC<PillarsOverviewProps> = ({ onNavigate, on
                 onClick={() => onOpenInquiry(pillar.id)}
                 className="inline-flex items-center gap-1.5 text-xs text-neutral-300 hover:text-white uppercase tracking-wider pt-3 border-t border-neutral-900 transition-colors cursor-pointer"
               >
-                <span>Consult On {pillar.title}</span>
+                <span>Ask About {pillar.title}</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </button>
             </div>

@@ -125,7 +125,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenI
               onClick={() => onOpenInquiry('general')}
               className="hidden md:inline-flex items-center gap-2 px-4 py-2 border border-neutral-700 hover:border-white text-xs uppercase tracking-[0.15em] text-neutral-200 hover:text-white transition-colors cursor-pointer"
             >
-              <span>Consultation</span>
+              <span>Order / Enquire</span>
               <ArrowUpRight className="w-3.5 h-3.5" />
             </button>
 
@@ -192,7 +192,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate, onOpenI
             }}
             className="w-full py-3 border border-neutral-600 hover:border-white text-white text-xs uppercase tracking-[0.2em] font-medium transition-colors cursor-pointer"
           >
-            Request Consultation
+            Order / Ask Questions
           </button>
 
           {/* Mobile Social Links */}

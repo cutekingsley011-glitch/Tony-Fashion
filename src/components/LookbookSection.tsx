@@ -62,18 +62,18 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({
         <div className="flex flex-row items-center justify-between mb-5 gap-3 border-b border-neutral-900 pb-3">
           <div>
             <div className="flex items-center gap-2 text-[10px] uppercase tracking-[0.25em] text-[#d4995c] font-sans">
-              <span>Tony Fashion Archive</span>
+              <span>Made in Port Harcourt</span>
               <span className="w-4 h-px bg-neutral-700" />
-              <span>Series 01 & 02</span>
+              <span>Real Customer Outfits</span>
             </div>
             <h2 className="font-serif text-xl sm:text-2xl md:text-3xl text-white font-normal leading-tight">
-              Collections Gallery
+              Our Clothes & Designs Gallery
             </h2>
           </div>
 
           <div className="flex items-center gap-3">
             <span className="text-[11px] text-neutral-400 font-light hidden sm:inline">
-              Tap any look to view details
+              Tap any photo to see fabrics, details & price
             </span>
           </div>
         </div>
@@ -125,14 +125,14 @@ export const LookbookSection: React.FC<LookbookSectionProps> = ({
 
                 {/* Quick WhatsApp Action per piece */}
                 <div className="mt-2 pt-1.5 border-t border-neutral-900 flex items-center justify-between text-[10px] text-neutral-400 group-hover:text-white">
-                  <span className="text-[9px] uppercase tracking-wider">Tap to View</span>
+                  <span className="text-[9px] uppercase tracking-wider">Tap details</span>
                   <a
-                    href={getWhatsAppUrl(`Hi Tony Fashion, I came from the website, I came to make enquiries regarding: ${item.title}.`)}
+                    href={getWhatsAppUrl(`Hi Tony Fashion, I saw this outfit on your website and I want to ask about it: ${item.title}.`)}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={(e) => e.stopPropagation()}
                     className="text-[#25D366] hover:text-white p-1"
-                    title="Inquire on WhatsApp"
+                    title="Ask about this outfit on WhatsApp"
                   >
                     <MessageCircle className="w-3.5 h-3.5 fill-current stroke-none" />
                   </a>
